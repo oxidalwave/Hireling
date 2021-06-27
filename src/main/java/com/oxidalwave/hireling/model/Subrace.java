@@ -13,8 +13,10 @@ import org.springframework.data.mongodb.core.mapping.Document;
 public class Subrace {
     @Id
     private String id;
+    private String index;
 
-    public Subrace(String id) {
+    public Subrace(String id, String index) {
         this.id = id;
+        this.index = index;
     }
 }

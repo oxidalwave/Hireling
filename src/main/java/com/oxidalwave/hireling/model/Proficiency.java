@@ -13,8 +13,10 @@ import org.springframework.data.mongodb.core.mapping.Document;
 public class Proficiency {
     @Id
     private String id;
+    private String index;
 
-    public Proficiency(String id) {
+    public Proficiency(String id, String index) {
         this.id = id;
+        this.index = index;
     }
 }

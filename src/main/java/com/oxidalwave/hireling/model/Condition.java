@@ -13,8 +13,10 @@ import org.springframework.data.mongodb.core.mapping.Document;
 public class Condition {
     @Id
     private String id;
+    private String index;
 
-    public Condition(String id) {
+    public Condition(String id, String index) {
         this.id = id;
+        this.index = index;
     }
 }

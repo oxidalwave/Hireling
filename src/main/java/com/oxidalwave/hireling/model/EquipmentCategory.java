@@ -13,8 +13,10 @@ import org.springframework.data.mongodb.core.mapping.Document;
 public class EquipmentCategory {
     @Id
     private String id;
+    private String index;
 
-    public EquipmentCategory(String id) {
+    public EquipmentCategory(String id, String index) {
         this.id = id;
+        this.index = index;
     }
 }

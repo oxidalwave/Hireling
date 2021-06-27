@@ -13,8 +13,10 @@ import org.springframework.data.mongodb.core.mapping.Document;
 public class MagicSchool {
     @Id
     private String id;
+    private String index;
 
-    public MagicSchool(String id) {
+    public MagicSchool(String id, String index) {
         this.id = id;
+        this.index = index;
     }
 }

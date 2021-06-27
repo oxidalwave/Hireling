@@ -13,8 +13,10 @@ import org.springframework.data.mongodb.core.mapping.Document;
 public class RuleSection {
     @Id
     private String id;
+    private String index;
 
-    public RuleSection(String id) {
+    public RuleSection(String id, String index) {
         this.id = id;
+        this.index = index;
     }
 }

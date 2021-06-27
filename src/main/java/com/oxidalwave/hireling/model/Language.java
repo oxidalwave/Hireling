@@ -13,8 +13,10 @@ import org.springframework.data.mongodb.core.mapping.Document;
 public class Language {
     @Id
     private String id;
+    private String index;
 
-    public Language(String id) {
+    public Language(String id, String index) {
         this.id = id;
+        this.index = index;
     }
 }

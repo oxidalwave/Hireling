@@ -13,8 +13,10 @@ import org.springframework.data.mongodb.core.mapping.Document;
 public class Alignment {
     @Id
     private String id;
+    private String index;
 
-    public Alignment(String id) {
+    public Alignment(String id, String index) {
         this.id = id;
+        this.index = index;
     }
 }

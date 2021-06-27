@@ -13,8 +13,10 @@ import org.springframework.data.mongodb.core.mapping.Document;
 public class DamageType {
     @Id
     private String id;
+    private String index;
 
-    public DamageType(String id) {
+    public DamageType(String id, String index) {
         this.id = id;
+        this.index = index;
     }
 }

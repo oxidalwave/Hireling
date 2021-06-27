@@ -13,8 +13,10 @@ import org.springframework.data.mongodb.core.mapping.Document;
 public class Feature {
     @Id
     private String id;
+    private String index;
 
-    public Feature(String id) {
+    public Feature(String id, String index) {
         this.id = id;
+        this.index = index;
     }
 }
