@@ -5,4 +5,6 @@ import org.springframework.data.mongodb.repository.MongoRepository;
 
 public interface WeaponPropertyDao extends MongoRepository<WeaponProperty, String> {
     WeaponProperty findByIndex(final String index);
+
+    WeaponProperty findByRef(final String index, final String name, final String url);
 }

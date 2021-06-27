@@ -5,4 +5,6 @@ import org.springframework.data.mongodb.repository.MongoRepository;
 
 public interface MagicItemDao extends MongoRepository<MagicItem, String> {
     MagicItem findByIndex(final String index);
+
+    MagicItem findByRef(final String index, final String name, final String url);
 }

@@ -5,4 +5,6 @@ import org.springframework.data.mongodb.repository.MongoRepository;
 
 public interface ConditionDao extends MongoRepository<Condition, String> {
     Condition findByIndex(final String index);
+
+    Condition findByRef(final String index, final String name, final String url);
 }
