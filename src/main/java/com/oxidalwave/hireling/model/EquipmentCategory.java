@@ -14,9 +14,13 @@ public class EquipmentCategory {
     @Id
     private String id;
     private String index;
+    private String name;
+    private String url;
 
-    public EquipmentCategory(String id, String index) {
+    public EquipmentCategory(String id, String index, String name, String url) {
         this.id = id;
         this.index = index;
+        this.name = name;
+        this.url = url;
     }
 }

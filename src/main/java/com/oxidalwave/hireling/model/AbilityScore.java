@@ -18,7 +18,7 @@ public class AbilityScore {
     private String name;
     @Field("full_name") private String fullName;
     @Field("desc") private String[] description;
-    private Skill[] skills;
+    // private Skill[] skills;
     private String url;
 
     public AbilityScore(String id,
@@ -26,14 +26,14 @@ public class AbilityScore {
                         String name,
                         String fullName,
                         String[] description,
-                        Skill[] skills,
+                        //Skill[] skills,
                         String url) {
         this.id = id;
         this.index = index;
         this.name = name;
         this.fullName = fullName;
         this.description = description;
-        this.skills = skills;
+        //this.skills = skills;
         this.url = url;
     }
 }

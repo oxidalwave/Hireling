@@ -14,9 +14,13 @@ public class Proficiency {
     @Id
     private String id;
     private String index;
+    private String name;
+    private String url;
 
-    public Proficiency(String id, String index) {
+    public Proficiency(String id, String index, String name, String url) {
         this.id = id;
         this.index = index;
+        this.name = name;
+        this.url = url;
     }
 }

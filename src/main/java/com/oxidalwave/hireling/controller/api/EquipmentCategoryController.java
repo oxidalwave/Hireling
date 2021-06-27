@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 
 @RestController
-@RequestMapping("/api/equipment-category")
+@RequestMapping("/api/equipment-categories")
 public class EquipmentCategoryController {
     @Autowired
     private EquipmentCategoryDao repository;

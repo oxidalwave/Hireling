@@ -14,9 +14,13 @@ public class Monster {
     @Id
     private String id;
     private String index;
+    private String name;
+    private String url;
 
-    public Monster(String id, String index) {
+    public Monster(String id, String index, String name, String url) {
         this.id = id;
         this.index = index;
+        this.name = name;
+        this.url = url;
     }
 }

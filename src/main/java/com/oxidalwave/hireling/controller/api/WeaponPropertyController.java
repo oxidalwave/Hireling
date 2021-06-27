@@ -1,7 +1,7 @@
 package com.oxidalwave.hireling.controller.api;
 
-import com.oxidalwave.hireling.model.Background;
-import com.oxidalwave.hireling.repository.BackgroundDao;
+import com.oxidalwave.hireling.model.WeaponProperty;
+import com.oxidalwave.hireling.repository.WeaponPropertyDao;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -11,18 +11,18 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 
 @RestController
-@RequestMapping("/api/backgrounds")
-public class BackgroundController {
+@RequestMapping("/api/weapon-properties")
+public class WeaponPropertyController {
     @Autowired
-    private BackgroundDao repository;
+    private WeaponPropertyDao repository;
 
     @GetMapping("/")
-    public List<Background> getBackgrounds() {
+    public List<WeaponProperty> getWeaponProperties() {
         return repository.findAll();
     }
 
     @GetMapping("/{index}")
-    public Background getBackgroundByIndex(@PathVariable String index) {
+    public WeaponProperty getWeaponPropertyByIndex(@PathVariable String index) {
         return repository.findByIndex(index);
     }
 }

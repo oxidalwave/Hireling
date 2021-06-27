@@ -14,9 +14,11 @@ public class Background {
     @Id
     private String id;
     private String index;
+    private String name;
 
-    public Background(String id, String index) {
+    public Background(String id, String index, String name) {
         this.id = id;
         this.index = index;
+        this.name = name;
     }
 }

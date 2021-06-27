@@ -14,9 +14,11 @@ public class Level {
     @Id
     private String id;
     private String index;
+    private String url;
 
-    public Level(String id, String index) {
+    public Level(String id, String index, String url) {
         this.id = id;
         this.index = index;
+        this.url = url;
     }
 }
