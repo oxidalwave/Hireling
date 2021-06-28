@@ -5,6 +5,4 @@ import org.springframework.data.mongodb.repository.MongoRepository;
 
 public interface LevelDao extends MongoRepository<Level, String> {
     Level findByIndex(final String index);
-
-    Level findByRef(final String index, final String url);
 }

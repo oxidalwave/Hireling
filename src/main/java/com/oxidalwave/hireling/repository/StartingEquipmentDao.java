@@ -5,6 +5,4 @@ import org.springframework.data.mongodb.repository.MongoRepository;
 
 public interface StartingEquipmentDao extends MongoRepository<StartingEquipment, String> {
     StartingEquipment findByIndex(final String index);
-
-    StartingEquipment findByRef(final String index, final String url);
 }

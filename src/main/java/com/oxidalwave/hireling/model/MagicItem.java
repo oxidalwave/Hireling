@@ -7,6 +7,8 @@ import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 import org.springframework.data.mongodb.core.mapping.Field;
 
+import java.util.List;
+
 @Getter
 @Setter
 @ToString
@@ -16,10 +18,10 @@ public class MagicItem {
     private String id;
     private String index;
     private String name;
-    @Field("desc") private String[] description;
+    @Field("desc") private List<String> description;
     private String url;
 
-    public MagicItem(String id, String index, String name, String[] description, String url) {
+    public MagicItem(String id, String index, String name, List<String> description, String url) {
         this.id = id;
         this.index = index;
         this.name = name;

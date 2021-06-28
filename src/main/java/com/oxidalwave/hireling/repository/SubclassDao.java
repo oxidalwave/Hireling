@@ -5,6 +5,4 @@ import org.springframework.data.mongodb.repository.MongoRepository;
 
 public interface SubclassDao extends MongoRepository<Subclass, String> {
     Subclass findByIndex(final String index);
-
-    Subclass findByRef(final String index, final String name, final String url);
 }
